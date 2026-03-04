@@ -61,10 +61,12 @@
             }
         }
         .policeText{
-
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
         }
         .policeTitre{
-
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
         }
     </style>
 </head>
@@ -109,11 +111,11 @@
     <main class="my-4 px-1">
         <!-- Hero -->
         <section
-            class="h-[87vh] hero mx-2 flex justify-center items-center">
+            class="h-[87vh] policeText hero mx-2 flex justify-center items-center">
             <div id="hero" class="h-4/5 rounded-3xl">
                 <div class="text-slate-700 text-left flex px-2 flex-row justify-center items-end h-full bg-linear-to-t from-white from-0% to-transparent to-60%">
-                    <div class="policeText font-medium text-lg mb-2">
-                        Je suis <span class="font-bold text-white  policeTitre bg-orange-400/80 px-1">Wasfade Tonoukoin</span>Etudiant en Informatique et Télécommunications. <br>Je vous présente ici mon <b>parcours</b> et mes <b>ambitions</b>.
+                    <div class="font-semibold text-[14px] mb-2">
+                        Je suis <span class="font-bold text-white policeTitre bg-orange-400/80 px-1">Wasfade Tonoukoin</span>Etudiant en génie civil. sJe vous présente ici mon <b>parcours</b> et mes <b>ambitions</b>.
                     </div>
                 </div>
             </div>
@@ -122,10 +124,12 @@
         <section id="propos"
             class="orange scroll-mt-[11vh] h-[60vh] rounded-3xl bg-amber-200/20 p-3" style="line-height:30px;">
             <h2
-            class="font-bold text-2xl policeTitre"> <i>Icon</i> Ma Bio: 
+            class="font-bold text-2xl policeTitre"> 
+            <i class="ri-book-open-fill mr-2"></i> 
+            Ma Bio
             </h2>
             <caption
-                class="text-xs font-light text-center">   Qui est Wasfade Tonoukoin ? 
+                class="text-xs font-light text-center policeText">   Qui est Wasfade Tonoukoin ? 
             </caption>
             <div class="policeText flex h-[85%] justify-center items-center">
                 <div>
@@ -139,10 +143,10 @@
             class="h-[60vh] rounded-3xl bg-slate-500/20 p-3" style="line-height:30px;">
             <h2
                 class="font-bold text-2xl policeTitre">
-                <i>Icon</i>
-                Volet Education: 
+                <i class="ri-graduation-cap-fill mr-2"></i>
+                Volet Education
             </h2>
-            <caption class="text-xs font-light text-center">Quels sont mes diplômes ?</caption>
+            <caption class="text-xs font-light text-center policeText">Quels sont mes diplômes ?</caption>
             <div class="policeText flex h-[85%] justify-center items-center">
                 <table class="rounded-lg bg-white py-1">
                     <thead class="policeTitre border-b-2 border-slate-500/80">
@@ -153,30 +157,30 @@
                     </thead>
                     <tbody class="policeText">
                         <tr>
-                            <td>Licence Professionnelle en BTP </td>
+                            <td class="font-medium text-center">Licence Professionnelle en BTP </td>
                             <td class="text-center">2025</td>
                         </tr>
                         <tr>
-                            <td>Certificat de Trading</td>
+                            <td class="font-medium">Certificat de Trading</td>
                             <td class="text-center">2024</td>
                         </tr>
                         <tr>
-                            <td>Baccalauréat F4</td>
+                            <td class="font-medium">Baccalauréat F4</td>
                             <td class="text-center">2022</td>
                         </tr>
                         <tr>
-                            <td>BEPC Modèle Long</td>
+                            <td class="font-medium">BEPC Modèle Long</td>
                             <td class="text-center">2019</td>
                         </tr>
                         <tr>
-                            <td>CEP</td>
+                            <td class="font-medium">CEP</td>
                             <td class="text-center">2015</td>
                         </tr>
                     </tbody>
-                    <tfoot class="border-t-2 border-slate-500/80 pt-3">
+                    <tfoot class="border-t-2 font-medium border-slate-500/80 pt-3">
                         <tr>
                             <td colspan="2" class="text-center">
-                                <p>Pour consulter avec plus de détails vous pouvez télécharger le <a href="CV.pdf">CV...</a></p>
+                                <p>Pour consulter avec plus de détails vous pouvez télécharger le <a href="CV.pdf" class="font-semiold underline hover:text-blue-400/90 px-1">CV</a>...</p>
                             </td>
                         </tr>
                     </tfoot>
@@ -188,19 +192,19 @@
         <section
             class="orange h-[50vh] rounded-3xl bg-amber-200/20 p-3" style="line-height:25px;">
             <h2 class="font-bold text-2xl policeTitre">
-                <i>Icon</i>
-                Volet Professionnel:
+                <i class="ri-briefcase-4-fill mr-2"></i>
+                Volet Professionnel
             </h2>
-            <caption class="text-xs font-light text-center">Quels sont mes domaines d'expertise ?</caption>
+            <caption class="text-xs font-light text-center policeText">Quels sont mes domaines d'expertise ?</caption>
             
             <!-- Informatique -->
-            <div class="h-[80%] flex justify-center items-center">
+            <div class="h-[80%] policeText flex justify-center items-center">
                 <div class="swiper w-full max-w-4xl mx-auto">
                     <div class="swiper-wrapper pb-12">
 
                         <!-- Slide 1 -->
                         <div class="swiper-slide flex justify-center">
-                                <h3 class="font-semibold policeText
+                                <h3 class="font-semibold policeTitre
                                 text-center mb-3">Génie Civil Construction Bâtiment.</h3>
                                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit vitae mollitia sed perferendis illum officia atque nihil praesentium hic!</div>
                         </div>
@@ -208,7 +212,7 @@
                         <!-- Slide 2 -->
 
                         <div class="swiper-slide flex justify-center">
-                                <h3 class="font-semibold policeText
+                                <h3 class="font-semibold policeTitre
                                  text-center mb-3">Génie Civil Construction Bâtiment.</h3>
                                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit vitae mollitia sed perferendis illum officia atque nihil praesentium hic!</div>
                         </div> 
@@ -216,7 +220,7 @@
                         <!-- slide 3 -->
 
                         <div class="swiper-slide flex justify-center">
-                                <h3 class="font-semibold policeText
+                                <h3 class="font-semibold policeTitre
                                  text-center mb-3">Génie Civil Construction Bâtiment.</h3>
                                 <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit vitae mollitia sed perferendis illum officia atque nihil praesentium hic!</div>
                         </div>
@@ -231,10 +235,11 @@
         <section id="projets" 
             class="orange scroll-mt-[11vh] h-[50vh] rounded-3xl bg-amber-200/20 p-3" style="line-height:30px;">
             <h2 class="font-bold text-2xl policeTitre">
-                <i>Icon</i>    
-                Mes Projets: 
+                <i class="ri-folder-open-fill  mr-2"></i>
+                   
+                Mes Projets
             </h2>
-            <caption class="text-xs font-light text-center">J'ai laissé les extraits de quelques de mes projets ici</caption> 
+            <caption class="text-xs font-light text-center policeText">J'ai laissé quelques de mes projets ici</caption> 
             <div class="policeText flex h-[85%] justify-center items-center">
                 <div class="swiper w-full">
                     <div class="swiper-wrapper pb-10">
@@ -310,7 +315,10 @@
       
         <!-- Témoignages -->
         <section class="h-[40vh] rounded-3xl bg-slate-500/20 p-3" style="line-height:30px;">
-            <h2 class="font-bold text-2xl policeTitre">Témoignages</h2>
+            <h2 class="font-bold text-2xl policeTitre">
+                 <i class="ri-speak-fill"></i>
+                Témoignages
+            </h2>
             <div class="policeText flex h-[85%] justify-center items-center">
                 <div class="swiper w-full">
                     <div class="swiper-wrapper pb-10">
@@ -398,31 +406,31 @@
         <!-- Contact -->
         <section id="contact" 
             class="header scroll-mt-[11vh] h-[55vh] rounded-3xl bg-white pt-3 px-3" style="line-height:30px;">
-            <h2 class="text-center font-bold policeTitre">
-                <i>Icon</i>
+            <h2 class="text-2xl text-center font-bold policeTitre">
+                <i class="ri-phone-line"></i>
                 Me Contactez
             </h2>
-            <form action="" method="post" class="flex flex-col gap-2">
+            <form action="" method="post" class="flex flex-col gap-2 policeText">
                 <div class="flex gap-1 justify-center items-center">
                     <div class="flex flex-col gap-1 w-1/2">
-                        <label for="nom" class="font-semibold policeText">Nom</label>
+                        <label for="nom" class="font-medium">Nom</label>
                         <input type="text" id="nom" name="nom" class="rounded-sm border border-slate-400/90 outline-0">
                     </div>
                     <div class="flex flex-col gap-1 w-1/2">
-                        <label for="prenom" class="font-semibold policeText">Prenom</label>
+                        <label for="prenom" class="font-medium">Prenom</label>
                         <input type="text" id="prenom" name="prenom" class="rounded-sm border border-slate-400/90 outline-0">
                     </div>
                 </div>
                 <div class="flex flex-col gap-1">
-                    <label for="email" class="font-semibold policeText">Email</label>
+                    <label for="email" class="font-medium ">Email</label>
                     <input type="email" id="email" name="email" class="rounded-sm border border-slate-400/90 outline-0">
                 </div>
                 <div class="flex flex-col gap-1">
-                    <label for="sujet" class="font-semibold policeText">Sujet</label>
+                    <label for="sujet" class="font-medium">Sujet</label>
                     <input type="text" id="sujet" name="sujet" class="rounded-sm border border-slate-400/90 outline-0">
                 </div>
                 <div class="flex flex-col gap-1">
-                    <label for="message" class="font-semibold policeText">Message</label>
+                    <label for="message" class="font-medium">Message</label>
                     <textarea name="message" id="message" class="rounded-sm border border-slate-400/90 outline-0" rows="2" style="resize: vertical;"></textarea>
                 </div>
                 <div class="flex items-center justify-end">
