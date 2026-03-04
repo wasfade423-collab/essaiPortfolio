@@ -309,6 +309,9 @@
   .h-\[750px\] {
     height: 750px;
   }
+  .h-\[vh\] {
+    height: vh;
+  }
   .h-auto {
     height: auto;
   }
