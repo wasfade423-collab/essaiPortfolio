@@ -393,6 +393,9 @@
   .w-\[300px\] {
     width: 300px;
   }
+  .w-\[px\] {
+    width: px;
+  }
   .w-auto {
     width: auto;
   }
