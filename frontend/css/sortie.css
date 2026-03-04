@@ -215,6 +215,9 @@
   .z-1000 {
     z-index: 1000;
   }
+  .m-4 {
+    margin: calc(var(--spacing) * 4);
+  }
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
@@ -232,6 +235,9 @@
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
+  }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
   }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
@@ -337,6 +343,114 @@
   }
   .h-full {
     height: 100%;
+  }
+  .max-h-\[0px\] {
+    max-height: 0px;
+  }
+  .max-h-\[5px\] {
+    max-height: 5px;
+  }
+  .max-h-\[30px\] {
+    max-height: 30px;
+  }
+  .max-h-\[40px\] {
+    max-height: 40px;
+  }
+  .max-h-\[40s0px\] {
+    max-height: 40s0px;
+  }
+  .max-h-\[42px\] {
+    max-height: 42px;
+  }
+  .max-h-\[55\] {
+    max-height: 55;
+  }
+  .max-h-\[150px\] {
+    max-height: 150px;
+  }
+  .max-h-\[250px\] {
+    max-height: 250px;
+  }
+  .max-h-\[300px\] {
+    max-height: 300px;
+  }
+  .max-h-\[310px\] {
+    max-height: 310px;
+  }
+  .max-h-\[320px\] {
+    max-height: 320px;
+  }
+  .max-h-\[350px\] {
+    max-height: 350px;
+  }
+  .max-h-\[400px\] {
+    max-height: 400px;
+  }
+  .max-h-\[420px\] {
+    max-height: 420px;
+  }
+  .max-h-\[422px\] {
+    max-height: 422px;
+  }
+  .max-h-\[425px\] {
+    max-height: 425px;
+  }
+  .max-h-\[450px\] {
+    max-height: 450px;
+  }
+  .max-h-\[510px\] {
+    max-height: 510px;
+  }
+  .max-h-\[550px\] {
+    max-height: 550px;
+  }
+  .max-h-\[px\] {
+    max-height: px;
+  }
+  .min-h-\[0px\] {
+    min-height: 0px;
+  }
+  .min-h-\[00px\] {
+    min-height: 00px;
+  }
+  .min-h-\[4px\] {
+    min-height: 4px;
+  }
+  .min-h-\[5\] {
+    min-height: 5;
+  }
+  .min-h-\[20px\] {
+    min-height: 20px;
+  }
+  .min-h-\[28px\] {
+    min-height: 28px;
+  }
+  .min-h-\[32px\] {
+    min-height: 32px;
+  }
+  .min-h-\[200px\] {
+    min-height: 200px;
+  }
+  .min-h-\[280px\] {
+    min-height: 280px;
+  }
+  .min-h-\[300px\] {
+    min-height: 300px;
+  }
+  .min-h-\[400px\] {
+    min-height: 400px;
+  }
+  .min-h-\[418px\] {
+    min-height: 418px;
+  }
+  .min-h-\[420px\] {
+    min-height: 420px;
+  }
+  .min-h-\[500px\] {
+    min-height: 500px;
+  }
+  .min-h-\[px\] {
+    min-height: px;
   }
   .w-1 {
     width: calc(var(--spacing) * 1);
@@ -612,6 +726,9 @@
   }
   .p-6 {
     padding: calc(var(--spacing) * 6);
+  }
+  .px-0 {
+    padding-inline: calc(var(--spacing) * 0);
   }
   .px-1 {
     padding-inline: calc(var(--spacing) * 1);

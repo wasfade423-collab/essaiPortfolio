@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="px-0">
 <head>
     <meta charset="UTF-8">
 
@@ -70,7 +70,7 @@
         }
     </style>
 </head>
-<body>
+<body class="px-0">
     <header 
         class="z-100 bg-white h-[10vh] flex border-b border-b-slate-500/80 sticky top-0">
         <nav 
@@ -89,7 +89,7 @@
                 </ul>
                 <div class="flex gap-1 justify-center items-center">
                     <button class="cursor-pointer px-2 py-1 mt-[9px] hover:bg-slate-300/80 rounded-full text-2xl font-bold text-slate-700">
-                        <i id="dark" class="ri-sun-line "></i>
+                        <i id="dark" class="ri-sun-line"></i>
                     </button>
                     <button id="burger"
                         class="cursor-pointer text-3xl px-2 py-1 rounded-full font-bold text-slate-700">
@@ -108,7 +108,7 @@
             </ul>            
         </div>
     </header>
-    <main class="my-4 px-1">
+    <main class="mt-4 px-2">
         <!-- Hero -->
         <section
             class="h-[87vh] policeText hero mx-2 flex justify-center items-center">
@@ -140,7 +140,7 @@
         <br><br><br>
         <!-- Diplômes -->
         <section 
-            class="h-[60vh] rounded-3xl bg-slate-500/20 p-3" style="line-height:30px;">
+            class="min-h-[500px] h-[60vh] max-h-[510px]  rounded-3xl bg-slate-500/20 p-3" style="line-height:30px;">
             <h2
                 class="font-bold text-2xl policeTitre">
                 <i class="ri-graduation-cap-fill mr-2"></i>
@@ -190,7 +190,7 @@
         <br><br><br>
         <!-- Profetionnel -->
         <section
-            class="orange h-[50vh] rounded-3xl bg-amber-200/20 p-3" style="line-height:25px;">
+            class="orange min-h-[280px] h-[50vh] max-h-[310px] rounded-3xl bg-amber-200/20 p-3" style="line-height:25px;">
             <h2 class="font-bold text-2xl policeTitre">
                 <i class="ri-briefcase-4-fill mr-2"></i>
                 Volet Professionnel
@@ -233,7 +233,7 @@
         <br><br><br>
         <!-- Projets -->
         <section id="projets" 
-            class="orange scroll-mt-[11vh] h-[50vh] rounded-3xl bg-amber-200/20 p-3" style="line-height:30px;">
+            class="orange scroll-mt-[11vh] min-h-[280px] h-[50vh] max-h-[310px] rounded-3xl bg-amber-200/20 p-3" style="line-height:30px;">
             <h2 class="font-bold text-2xl policeTitre">
                 <i class="ri-folder-open-fill  mr-2"></i>
                    
@@ -314,7 +314,7 @@
         <br><br><br>
       
         <!-- Témoignages -->
-        <section class="h-[40vh] rounded-3xl bg-slate-500/20 p-3" style="line-height:30px;">
+        <section class="min-h-[280px] h-[40vh] max-h-[300px] rounded-3xl bg-slate-500/20 p-3" style="line-height:30px;">
             <h2 class="font-bold text-2xl policeTitre">
                  <i class="ri-speak-fill"></i>
                 Témoignages
@@ -405,7 +405,7 @@
         <br><br>
         <!-- Contact -->
         <section id="contact" 
-            class="header scroll-mt-[11vh] h-[55vh] rounded-3xl bg-white pt-3 px-3" style="line-height:30px;">
+            class="header scroll-mt-[11vh] min-h-[400px] h-[55vh] max-h-[420px] rounded-3xl bg-white pt-3 px-3" style="line-height:30px;">
             <h2 class="text-2xl text-center font-bold policeTitre">
                 <i class="ri-phone-line"></i>
                 Me Contactez
@@ -475,9 +475,12 @@
     </footer>
     <script>
 
-        document.getElementById("dark").addEventListener('click', ()=>{
+        let dark = document.getElementById("dark");
+        dark.addEventListener('click', ()=>{
             console.log(1);
             document.body.classList.toggle("dark");
+            dark.classList.toggle("ri-moon-fill");
+            dark.classList.toggle("ri-sun-line");
         })
 
         let burger=document.getElementById("burger");
