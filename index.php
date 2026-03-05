@@ -130,7 +130,7 @@
         <br><br><br>
         <!-- Diplômes -->
         <section 
-            class="min-h-[65vh]  rounded-3xl bg-slate-500/20 p-3" style="line-height:30px;">
+            class="h-[65vh]  rounded-3xl bg-slate-500/20 p-3" style="line-height:30px;">
             <h2
                 class="font-bold text-2xl policeTitre">
                 <i class="ri-graduation-cap-fill mr-2"></i>
@@ -180,7 +180,7 @@
         <br><br><br>
         <!-- Profetionnel -->
         <section
-            class="orange min-h-[50vh] rounded-3xl bg-amber-200/20 p-3" style="line-height:25px;">
+            class="orange h-[50vh] rounded-3xl bg-amber-200/20 p-3" style="line-height:25px;">
             <h2 class="font-bold text-2xl policeTitre">
                 <i class="ri-briefcase-4-fill mr-2"></i>
                 Volet Professionnel
@@ -223,7 +223,7 @@
         <br><br><br>
         <!-- Projets -->
         <section id="projets" 
-            class="orange scroll-mt-[11vh] min-h-[50vh] rounded-3xl bg-amber-200/20 p-3" style="line-height:30px;">
+            class="orange scroll-mt-[11vh] h-[50vh] rounded-3xl bg-amber-200/20 p-3" style="line-height:30px;">
             <h2 class="font-bold text-2xl policeTitre">
                 <i class="ri-folder-open-fill  mr-2"></i>
                    
