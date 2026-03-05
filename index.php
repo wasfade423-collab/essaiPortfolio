@@ -410,13 +410,13 @@
                     </div>
                     <div class="flex flex-col gap-1 w-1/2">
                         <label for="prenom" class="font-medium">Prenom</label>
-                        <div class="text-red-500/80 font-semibold policeText text-left text-sm"><?=  $message = (isset($_SESSION['error']['nom'])) ? $_SESSION['error']['nom'] : "" ?></div>
+                        <div class="text-red-500/80 font-semibold policeText text-left text-sm"><?=  $message = (isset($_SESSION['error']['prenom'])) ? $_SESSION['error']['prenom'] : "" ?></div>
                         <input type="text" id="prenom" name="prenom" value="<?= @$_SESSION['data']['prenom'] ?>" class="rounded-sm border border-slate-400/90 outline-0">
                     </div>
                 </div>
                 <div class="flex flex-col gap-1">
                     <label for="email" class="font-medium ">Email</label>
-                    <div class="text-red-500/80 font-semibold policeText text-left text-sm"><?=  $message = (isset($_SESSION['error']['prenom'])) ? $_SESSION['error']['prenom'] : "" ?></div>
+                    <div class="text-red-500/80 font-semibold policeText text-left text-sm"><?=  $message = (isset($_SESSION['error']['email'])) ? $_SESSION['error']['email'] : "" ?></div>
                     <input type="email" id="email" name="email" value="<?= @$_SESSION['data']['email'] ?>" class="rounded-sm border border-slate-400/90 outline-0">
                 </div>
                 <div class="flex flex-col gap-1">
