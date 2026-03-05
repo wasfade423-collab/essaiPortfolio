@@ -10,11 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    
     <link rel="shortcut icon" href="assets/user.ico" type="image/x-icon">
     <title>Portfolio | Le Technicien BTP</title>
     <style>
@@ -70,7 +69,7 @@
         }
     </style>
 </head>
-<body class="mx-0 px-0 overflow-x-hidden">
+<body class="mx-0 px-0 overflow-x-hidden dark:bg-black dark:text-white">
     <header 
         class="z-100 bg-white h-[10vh] flex border-b border-b-slate-500/80 sticky top-0">
         <nav 
@@ -81,9 +80,6 @@
             </div>
             <div>                
                 <div class="flex gap-1 justify-center items-center">
-                    <button class="cursor-pointer text-3xl px-2 py-1 mt-[9px] hover:bg-slate-300/80 rounded-full font-bold text-slate-700">
-                        <i id="dark" class="ri-sun-line"></i>
-                    </button>
                     <button id="burger"
                         class="cursor-pointer text-4xl px-2 py-1 rounded-full font-bold text-slate-700">
                         &equiv;
@@ -434,7 +430,7 @@
     </main>
     <br><br>
     <footer class="pt-4 bg-slate-500">
-        <div class="flex flex-col px-2 justify-center items-center gap-2 text-xl font-light">
+        <div class="flex flex-row px-2 justify-center items-center gap-2 text-xl font-light">
             <ul class="policeText">
                 <li class="text-white mx-2 my-2 pb-1 hover:translate-x-0.5 hover:border-b border-amber-400 hover:text-amber-400 duration-500 active:border-white">
                     <a href="index.php">Accueil</a>
@@ -462,19 +458,12 @@
             </div>
         </div>
         <hr class="mt-2 border-b border-slate-700/80 h-0.5 bg-slate-700/80">
-        <div class="bg-slate-700 pt-4">
+        <div class="pb-2 bg-slate-700 pt-4">
             <p class="text-center bottom-0 text-white policeText font-semibold">Copyright 2025 By Wasfade Tonoukoin - Tous droits réservés.</p>
         </div>
     </footer>
     <script>
 
-        let dark = document.getElementById("dark");
-        dark.addEventListener('click', ()=>{
-            console.log(1);
-            document.body.classList.toggle("dark");
-            dark.classList.toggle("ri-moon-fill");
-            dark.classList.toggle("ri-sun-line");
-        })
 
         let burger=document.getElementById("burger");
         let navM = document.querySelector(".navM");
