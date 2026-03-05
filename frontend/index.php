@@ -1,4 +1,4 @@
-
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="fr" class="px-0">
 <head>
@@ -69,7 +69,7 @@
         }
     </style>
 </head>
-<body class="mx-0 px-0 overflow-x-hidden dark:bg-black dark:text-white">
+<body class="mx-0 px-0 bg-white overflow-x-hidden dark:bg-black dark:text-white">
     <header 
         class="z-100 bg-white h-[10vh] flex border-b border-b-slate-500/80 sticky top-0">
         <nav 
@@ -399,7 +399,8 @@
                 <i class="ri-phone-line"></i>
                 Me Contactez
             </h2>
-            <form action="" method="post" class="flex flex-col gap-2 policeText">
+            <div class="text-green-500/90 font-light policeText text-center"><?= @$_SESSION['valide'] ?></div>
+            <form action="../backend/process.php" method="post" class="flex flex-col gap-2 policeText">
                 <div class="flex gap-1 justify-center items-center">
                     <div class="flex flex-col gap-1 w-1/2">
                         <label for="nom" class="font-medium">Nom</label>
