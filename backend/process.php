@@ -33,12 +33,34 @@
         }
         $_SESSION['data'] = $data;
         if(!empty($error)){
-            var_dump($_SESSION['error'] = $error);
+            $_SESSION['error'] = $error;
         }else{
-            $_SESSION['valide'] = "Votre Message a bien été envoyé.";
-            $data = implode('/', $data);
-            $data = $data."\n";
+            $email = $data['email'];
+            $nom = $data['nom'];
+            $prenom = $data['prenom'];
+            $sujet = $data['sujet'];
             file_put_contents("list.txt", $data);
+            $instance = new PHPMailer(true);
+            try{
+                $instance ->isSMTP();
+                $instance ->Host = "smtp.gmail.com";
+                $instance ->SMTPAuth = true;
+                $instance ->Username = "wasfade423@gmail.com"; // mon email en l'occurence celui qui est connecté au serveur PHPMailer
+                $instance ->Password = "rpuyklolkcvlsukh";
+                $instance ->SMTPSecure = "tls";
+                $instance ->Port = "587";
+                $instance ->setFrom($email, "Un visiteur du site Wab vitrine"); // l'email du visiteur
+                $instance ->addAdress("wasfade423@gmail.com");//le proprétaire du site
+                $instance ->Subject = $sujet;
+                $instance ->Body = "
+                    Nom: $nom $prenom
+                    Email: $email
+                    Message: $message
+                ";
+                $instance->send();
+            }catch(Exception $e){
+                $_SESSION['error']['valide'] = $e->getMessage();
+            }
             //c'est ici que je consomme l'api.
         }
         header("Location: /index.php");
