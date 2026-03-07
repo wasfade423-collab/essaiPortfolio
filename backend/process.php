@@ -44,6 +44,7 @@
             $email = $data['email']; //le mail du visiteur
             $nom = $data['nom']; //le nom du visiteur
             $prenom = $data['prenom']; //le prenom du visiteur
+            $message = $data['message']; //le message du visiteur
             $sujet = $data['sujet'];  //le sujet du visiteur
 
             //je cree une nouvelle instance de la classe PHPMailer
@@ -60,11 +61,12 @@
                 $instance ->addAddress("wasfade423@gmail.com");//le proprétaire du site qui va recevoir le mail
                 $instance ->Subject = $sujet;
                 $instance ->Body = "
+                    Message: $message
                     Nom: $nom $prenom
                     Email: $email
-                    Message: $message
                 ";
                 $instance->send();
+                $_SESSION['valide'] = "Message envoyé avec Succes.";
             }catch(Exception $e){
                 $_SESSION['error']['valide'] = $e->getMessage();
             }

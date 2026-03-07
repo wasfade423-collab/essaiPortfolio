@@ -410,8 +410,8 @@
                 <i class="ri-phone-line"></i>
                 Me Contactez
             </h2>
-            <div class="text-green-500/90 font-semibold policeText text-center"><?=  $message = (isset($_SESSION['valide'])) ? "<i class=\"ri-verified-badge-line rounded-full bg-green-200/80\"></i>".$_SESSION['valide'] : "" ?></div>
-            <div class="text-red-500/80 font-semibold policeText text-center"><?=  $message = (isset($_SESSION['error']['valide'])) ? "<i class=\"ri-error-warning-line rounded-full bg-red-200/80\"></i>".$_SESSION['error']['valide'] : "" ?></div>
+            <div class="text-green-500/90 font-semibold policeText text-center"><?=  $message = (isset($_SESSION['valide'])) ? "<i class=\"ri-verified-badge-line rounded-full bg-green-200/80 mr-1 \"></i>".$_SESSION['valide'] : "" ?></div>
+            <div class="text-red-500/80 font-semibold policeText text-center"><?=  $message = (isset($_SESSION['error']['valide'])) ? "<i class=\"ri-error-warning-line rounded-full bg-red-200/80 mr-1 \"></i>".$_SESSION['error']['valide'] : "" ?></div>
             <form action="/backend/process.php" method="post" class="flex flex-col gap-2 policeText pb-2">
                 <div class="flex gap-1 justify-center items-center">
                     <div class="flex flex-col gap-1 w-1/2">
