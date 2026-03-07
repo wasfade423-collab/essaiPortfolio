@@ -1,4 +1,10 @@
 <?php  
+
+
+    require '../vendor/autoload.php';
+
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
     session_start();
     if($_SERVER['REQUEST_METHOD'] === "POST"){
         //recupere nom
@@ -35,22 +41,23 @@
         if(!empty($error)){
             $_SESSION['error'] = $error;
         }else{
-            $email = $data['email'];
-            $nom = $data['nom'];
-            $prenom = $data['prenom'];
-            $sujet = $data['sujet'];
-            file_put_contents("list.txt", $data);
+            $email = $data['email']; //le mail du visiteur
+            $nom = $data['nom']; //le nom du visiteur
+            $prenom = $data['prenom']; //le prenom du visiteur
+            $sujet = $data['sujet'];  //le sujet du visiteur
+
+            //je cree une nouvelle instance de la classe PHPMailer
             $instance = new PHPMailer(true);
             try{
                 $instance ->isSMTP();
                 $instance ->Host = "smtp.gmail.com";
                 $instance ->SMTPAuth = true;
-                $instance ->Username = "wasfade423@gmail.com"; // mon email en l'occurence celui qui est connecté au serveur PHPMailer
+                $instance ->Username = "wasfade423@gmail.com"; // mon email en l'occurence celui qui est connecté au serveur PHPMailer c'est ce email qui va valider l'envoie du message  
                 $instance ->Password = "rpuyklolkcvlsukh";
                 $instance ->SMTPSecure = "tls";
                 $instance ->Port = "587";
                 $instance ->setFrom($email, "Un visiteur du site Wab vitrine"); // l'email du visiteur
-                $instance ->addAdress("wasfade423@gmail.com");//le proprétaire du site
+                $instance ->addAddress("wasfade423@gmail.com");//le proprétaire du site qui va recevoir le mail
                 $instance ->Subject = $sujet;
                 $instance ->Body = "
                     Nom: $nom $prenom

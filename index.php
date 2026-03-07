@@ -112,18 +112,24 @@
         </section>
         <!-- Biography -->
         <section id="propos"
-            class="orange scroll-mt-[11vh] h-[60vh] rounded-3xl bg-amber-200/20 p-3" style="line-height:30px;">
+            class="orange scroll-mt-[11vh] min-h-[60vh] rounded-3xl bg-amber-200/20 p-3" style="line-height:30px;">
             <h2
             class="font-bold text-2xl policeTitre"> 
             <i class="ri-book-open-fill mr-2"></i> 
             Ma Bio
             </h2>
             <caption
-                class="text-xs font-light text-center policeText">   Qui est Wasfade Tonoukoin ? 
+                class="text-xs font-light text-center policeText mb-1">   Qui est Wasfade Tonoukoin ? 
             </caption>
             <div class="policeText flex h-[85%] justify-center items-center">
                 <div>
-                    <span class="policeTitre font-semibold">Wasfade Tonoukoin</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tempora molestiae dolore, debitis maiores deleniti expedita? Animi quo at dolor laboriosam officiis accusamus incidunt aut rem eius, distinctio consectetur in!
+                    <span class="policeTitre font-semibold text-center">Wasfade Tonoukoin Informaticien Junior</span><br>
+                    <div class="mb-2">
+                        &nbsp;&nbsp;&nbsp;&nbsp;Passionné par le développement <b>Mobile et Web</b> depuis plusieurs annnées, j'intervient déjà sur iverse projet dans la réalisation de site Ecommerce, site Portfolio, site de Vote en ligne. Mon parcours est marqué par une formation de 3ans à l'INSTI Lokossa/Benin , ce qui m'a permis de développer une expertise pointue en Dévelloppement Mobile et Web.
+                    </div>
+                    <div>
+                        &nbsp;&nbsp;&nbsp;&nbsp;Originaire du <b>Bénin</b>, j'ai choisis le domaine de l'informatique car cela est une passion pour moi.Je parle princialement le français puis l'Anglais couramment.
+                    </div>                
                 </div>
             </div>
         </section>
@@ -148,23 +154,23 @@
                     <tbody class="policeText">
                         <tr>
                             <td class="">Licence Professionnelle en BTP </td>
-                            <td class="text-center">2025</td>
+                            <td class="text-center">2027</td>
                         </tr>
                         <tr>
                             <td class="">Certificat de Trading</td>
+                            <td class="text-center">2025</td>
+                        </tr>
+                        <tr>
+                            <td class="">Baccalauréat C</td>
                             <td class="text-center">2024</td>
                         </tr>
                         <tr>
-                            <td class="">Baccalauréat F4</td>
-                            <td class="text-center">2022</td>
-                        </tr>
-                        <tr>
-                            <td class="">BEPC Modèle Long</td>
-                            <td class="text-center">2019</td>
+                            <td class="">BEPC Modèle Court</td>
+                            <td class="text-center">2021</td>
                         </tr>
                         <tr>
                             <td class="">CEP</td>
-                            <td class="text-center">2015</td>
+                            <td class="text-center">2017</td>
                         </tr>
                     </tbody>
                     <tfoot class="border-t-2 font-medium border-slate-500/80 pt-3">
@@ -195,16 +201,20 @@
                         <!-- Slide 1 -->
                         <div class="swiper-slide flex justify-center">
                                 <h3 class="font-semibold policeTitre
-                                text-center mb-3">Génie Civil Construction Bâtiment.</h3>
-                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit vitae mollitia sed perferendis illum officia atque nihil praesentium hic!</div>
+                                text-center mb-3">Développement Web</h3>
+                                <div>
+                                    Je conçois des solutions informatiques innovantes pour automatiser vos processus. Mon rôle est de transformer vos défis complexes en outils numériques performants sur le Web.
+                                </div>
                         </div>
 
                         <!-- Slide 2 -->
 
                         <div class="swiper-slide flex justify-center">
                                 <h3 class="font-semibold policeTitre
-                                 text-center mb-3">Génie Civil Construction Bâtiment.</h3>
-                                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam impedit vitae mollitia sed perferendis illum officia atque nihil praesentium hic!</div>
+                                 text-center mb-3">Dévelloppement Mobile</h3>
+                                <div>
+                                    Je conçois des applications mobiles fluides et intuitives. Mon rôle : transformer vos idées en expériences performantes sur smartphone.
+                                </div>
                         </div> 
                         
                         <!-- slide 3 -->
@@ -304,7 +314,7 @@
         <br><br><br>
       
         <!-- Témoignages -->
-        <section class="min-h-[40vh] rounded-3xl bg-slate-500/20 p-3" style="line-height:30px;">
+        <section class="h-[40vh] rounded-3xl bg-slate-500/20 p-3" style="line-height:30px;">
             <h2 class="font-bold text-2xl policeTitre">
                  <i class="ri-speak-fill"></i>
                 Témoignages
