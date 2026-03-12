@@ -88,7 +88,7 @@
                 </div>
             </div>
         </nav>
-        <div class="absolute z-1000 -translate-x-100 duration-500 navM bg-slate-500 h-[750px] flex justify-center py-2 w-[300px]">
+        <div class="absolute z-1000 -translate-x-100 duration-500 navM bg-slate-500 h-[750px] flex justify-center py-2 w-[270px]">
             <ul
                 class="font-medium flex text-2xl flex-col gap-1 text-white ">
                     <a href="index.php"><li class="mx-2 my-2 pb-1 hover:border-b border-amber-400 hover:translate-x-0.5 hover:text-amber-400 duration-500 active:border-white">Accueil</li></a>
@@ -477,7 +477,7 @@
         </div>
         <hr class="mt-2 border-b border-slate-700/80 h-0.5 bg-slate-700/80">
         <div class="pb-2 bg-slate-700 pt-4">
-            <p class="text-center bottom-0 text-white policeText font-semibold">Copyright 2025 By Wasfade Tonoukoin - Tous droits réservés.</p>
+            <p class="text-center bottom-0 text-white policeText font-semibold">Copyright 2026 By Wasfade Tonoukoin - Tous droits réservés.</p>
         </div>
     </footer>
     <script>
